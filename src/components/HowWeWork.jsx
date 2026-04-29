@@ -3,23 +3,23 @@ import { FaStethoscope, FaMagic, FaAward, FaUsers } from 'react-icons/fa'
 const features = [
   {
     icon: <FaStethoscope />,
-    title: 'Valoración y tratamiento personalizado',
-    text: 'Sabemos que eres único. Realizamos una valoración previa de tu patología para adaptarnos a tu problema y que tu tratamiento sea personalizado.',
+    title: 'Valoración y diagnóstico personalizado',
+    text: 'Analizamos tu salud bucodental con detalle para ofrecerte un tratamiento totalmente adaptado a tus necesidades.',
   },
   {
     icon: <FaMagic />,
-    title: 'Técnicas avanzadas',
-    text: 'Ofrecemos tratamiento de máxima calidad haciendo uso de terapia manual y tecnología de última generación.',
+    title: 'Tecnología avanzada',
+    text: 'Trabajamos con equipos de última generación para garantizar tratamientos más precisos, cómodos y efectivos.',
   },
   {
     icon: <FaAward />,
-    title: 'Fisioterapia especializada',
-    text: 'Trabajamos por tu salud y bienestar. Todos los tratamientos son realizados por especialistas sanitarios con productos de máxima calidad.',
+    title: 'Especialistas cualificados',
+    text: 'Nuestro equipo está formado por profesionales con amplia experiencia en odontología estética y salud dental.',
   },
   {
     icon: <FaUsers />,
-    title: 'Servicios',
-    text: 'Cuidarán de ti fisioterapeutas profesionales, especialistas en tratamiento del dolor, suelo pélvico, fisioterapia respiratoria infantil y más.',
+    title: 'Atención cercana',
+    text: 'Te acompañamos en todo el proceso para que te sientas seguro, informado y con total confianza en cada visita.',
   },
 ]
 
@@ -35,7 +35,7 @@ const HowWeWork = () => {
           </h2>
 
           <p className="mt-4 text-neutral-600">
-            Nuestro proceso está diseñado para ofrecerte la mejor atención y resultados
+            Nuestro proceso está diseñado para cuidar tu sonrisa desde el primer momento
           </p>
         </div>
 

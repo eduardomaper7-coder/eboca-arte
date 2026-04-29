@@ -4,68 +4,68 @@ const Hero = () => {
       id="inicio"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
       style={{
-        backgroundImage: "url('/hero-fisio.jpg')",
+        backgroundImage: "url('/hero-dentista-usera.jpg')", // 👈 tu imagen aquí
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
       }}
     >
-      {/* Filtro negro reducido */}
-      <div className="absolute inset-0 bg-black/35"></div>
+      {/* Overlay azul suave */}
+      <div className="absolute inset-0 bg-[#2F4F7F]/45"></div>
 
       {/* Degradado */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-black/70"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-[#2F4F7F]/20 via-[#2F4F7F]/35 to-[#1C355E]/70"></div>
 
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-4 pb-16 pt-28 text-center">
-        <img
-          src="/logo-hero.png"
-          alt="Fisioprotema"
-          className="mb-8 h-14 w-auto md:h-20"
-        />
+        
+        <div className="mb-6 flex flex-col items-center">
+          <span className="text-2xl font-light tracking-widest text-white/80">
+            CLÍNICA DENTAL
+          </span>
+          <span className="text-3xl font-extrabold tracking-wide text-white md:text-4xl">
+            E-Boca<span className="text-white/80">&</span>Arte
+          </span>
+        </div>
 
         <h1 className="max-w-4xl text-5xl font-extrabold leading-tight text-white sm:text-6xl md:text-7xl">
-          Clínica de fisioterapia en{' '}
-          <span className="text-[#E4B525]">Leganés</span>
+          Clínica dental en Usera
         </h1>
 
         <p className="mt-8 max-w-3xl text-lg leading-9 text-white/90 sm:text-xl">
-          Tratamientos personalizados para aliviar el dolor, recuperar tu movilidad
-          y mejorar tu bienestar con un enfoque profesional, cercano y efectivo.
+          Tratamientos de odontología general, ortodoncia, estética dental,
+          implantes y prótesis con un enfoque cercano, profesional y moderno
+          para cuidar tu sonrisa.
         </p>
 
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            href="https://wa.me/34637883587"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-3 rounded-xl bg-[#E4B525] px-8 py-4 text-lg font-bold text-black transition hover:bg-[#d3a61f]"
-          >
-            <img
-              src="/whatsapp.png"
-              alt="WhatsApp"
-              className="h-6 w-6 object-contain"
-            />
-            Pedir cita
-          </a>
-
-          <a
-            href="#servicios"
-            className="inline-flex items-center rounded-xl border border-white px-8 py-4 text-lg font-semibold !text-white transition hover:bg-white hover:!text-black"
-          >
-            Nuestros servicios
-          </a>
+        <div className="mt-10">
+          <div className="rounded-2xl bg-white/95 px-8 py-6 shadow-xl backdrop-blur">
+            <p className="text-base font-medium text-[#2F4F7F]">
+              Pide cita llamando al
+            </p>
+            <a
+              href="tel:914768665"
+              className="mt-2 block text-2xl font-extrabold text-[#2F4F7F] hover:underline"
+            >
+              914 76 86 65
+            </a>
+          </div>
         </div>
 
-        {/* Descubre más en blanco */}
         <a
-  href="#servicios"
-  style={{ color: '#ffffff' }}
-  className="mt-20 inline-flex flex-col items-center text-base font-medium !text-white transition hover:!text-white"
->
-  Descubre más
-  <span className="mt-2 text-2xl !text-white">⌄</span>
-</a>
+          href="#servicios"
+          className="mt-6 inline-flex items-center rounded-xl border border-white px-8 py-4 text-lg font-semibold text-white transition hover:bg-white hover:text-[#2F4F7F]"
+        >
+          Nuestros servicios
+        </a>
+
+        <a
+          href="#servicios"
+          className="mt-20 inline-flex flex-col items-center text-base font-medium text-white"
+        >
+          Descubre más
+          <span className="mt-2 text-2xl">⌄</span>
+        </a>
       </div>
     </section>
   )
